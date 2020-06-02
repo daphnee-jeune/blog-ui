@@ -33,12 +33,18 @@
 }
 
 .postImageContainer img{
-    max-width:100%;
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
     max-height: 100%;
+    margin: 0 25%;
+    object-fit: cover;
+
 }
 
 .postContent{
-    margin: 10px;
+    margin: 5%;
+    text-align: justify;
 }
 
 .postContent h3{

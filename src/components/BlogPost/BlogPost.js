@@ -15,15 +15,15 @@ const BlogPost = (props) => {
         blogImage: "" ,
         blogText: ""
     })
-    const [ext, setext] = useState('')
+    const [slug, setSlug] = useState('')
     
     
     useEffect(() => {
-        const ext = props.match.params.ext
-        const post = blogPost.data.find(post => post.ext == ext)
+        const slug = props.match.params.slug
+        const post = blogPost.data.find(post => post.slug == slug)
         setPost(post)
-        setext(ext)
-    }, [post, props.match.params.ext])
+        setSlug(slug)
+    }, [post, props.match.params.slug])
 
     if(post.blogImage == "") return null
 
