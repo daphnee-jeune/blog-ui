@@ -15,15 +15,15 @@ const BlogPost = (props) => {
         blogImage: "" ,
         blogText: ""
     })
-    const [slug, setSlug] = useState('')
+    const [ext, setext] = useState('')
     
     
     useEffect(() => {
-        const slug = props.match.params.slug
-        const post = blogPost.data.find(post => post.slug == slug)
+        const ext = props.match.params.ext
+        const post = blogPost.data.find(post => post.ext == ext)
         setPost(post)
-        setSlug(slug)
-    }, [post, props.match.params.slug])
+        setext(ext)
+    }, [post, props.match.params.ext])
 
     if(post.blogImage == "") return null
 
@@ -31,21 +31,19 @@ const BlogPost = (props) => {
         <div className="blogPostContainer">
             <Card>
                 <div className="blogHeader">
-  <span className="blogCategory">{post.blogCategory}</span>
-                    <h1 className="postTitle">{post.blogTitle}</h1>
-  <span className="postedBy">posted on {post.postedOn} by {post.author}</span>
+                    <span className="blogCategory">{post.blogCategory}</span>
+                        <h1 className="postTitle">{post.blogTitle}</h1>
+                    <span className="postedBy">posted on {post.postedOn} by {post.author}</span>
                 </div>
 
                 <div className="postImageContainer">
                     <img src={require('../../blogPostImages/' + post.blogImage)} alt="Post Image" />
-                    
                 </div>
 
                 <div className="postContent">
-  <h3>{post.blogTitle}</h3>
-  <p>{post.blogText}</p>
+                    <h3>{post.blogTitle}</h3>
+                    <p>{post.blogText}</p>
                 </div>
-                
             </Card> 
         </div>
    )

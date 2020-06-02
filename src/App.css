@@ -9,3 +9,6 @@ body{
   margin: 0 auto;
 }
 
+img {
+  object-fit: cover;
+}

@@ -2,4 +2,22 @@
     margin: 10px 0;
     background: white;
     height: 400px;
+    display: flex;
+}
+
+.about-container img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    color: #577d91;
+}
+
+.about {
+    width: 60%;
+    margin: 2% auto;
+    text-align: justify;
 }

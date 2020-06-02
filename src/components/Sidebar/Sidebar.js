@@ -12,7 +12,6 @@ const Sidebar = (props) => {
 
     const [posts, setPosts] = useState([])
     
-    
     useEffect(() => {
         const posts = blogPost.data
         setPosts(posts)
@@ -39,7 +38,7 @@ const Sidebar = (props) => {
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
                 <div className="cardHeader">
                     <span>Social Network</span>
-                    <div className="socialLinks">
+                    <div className="side-socialLinks">
                         <i className="fa fa-youtube-square fa-lg"></i>
                         <i className="fa fa-facebook-square fa-lg"></i>
                         <i className="fa fa-twitter-square fa-lg"></i>

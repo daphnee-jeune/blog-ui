@@ -1,5 +1,5 @@
 .postImageWrapper{
-    height: 555px;
+    height: 650px;
     overflow: hidden;
     padding-bottom: 20px 0;
 }
@@ -22,10 +22,21 @@
 .readMore {
     width: 200px;
     height: 35px;
-    border: none;
+    border: #d6e5ed;
     border-radius: 15px;
     background: #d6e5ed;
-    color: #577d91;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+.readMore:hover {
+    border: 2px solid #d6e5ed;
+    color: #d6e5ed;
+    background: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.readMore a {
+    text-decoration: none;
+    color: #577d91;
 }

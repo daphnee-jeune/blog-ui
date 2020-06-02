@@ -2,4 +2,17 @@
     margin: 10px 0;
     background: white;
     height: 400px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container p {
+    background: #d6e5ed;
+    color: #577d91;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding: 5% 0;
 }

@@ -1,8 +1,8 @@
-.sidebarContainer{
+.sidebarContainer {
     width: 27%;
 }
 
-.cardHeader{
+.cardHeader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,34 +16,42 @@
     height: 60px;
 }
 
-.profileImageContainer{
+.side-socialLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.profileImageContainer {
     width: 100%;
     box-sizing: border-box;
 }
 
-.profileImageContainer img{
+.profileImageContainer img {
     max-width: 100%;
     max-height: 100%;
     margin: 20px 0;
 }
 
-.personalBio{
+.personalBio {
     font-size: 14px;
     color: #565673;
     font-weight: 300;
     text-align: center;
 }
 
-.recentPosts{
+.recentPosts {
     padding: 20px 0;
 }
 
-.recentPost{
+.recentPost {
     border-bottom: 1px solid #eee;
     margin-bottom: 10px;
 }
 
-.recentPost h3{
+.recentPost h3 {
     color: #6c6c6c;
     letter-spacing: 1px;
     font-size: 14px;
@@ -51,7 +59,7 @@
     margin: 0;
 }
 
-.recentPost span{
+.recentPost span {
     font-size: 10px;
     font-weight: 400;
     color: #6c6c66;

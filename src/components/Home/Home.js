@@ -18,7 +18,7 @@ const ImageGallary = props => (
         <div className="gallaryPost" style={props.gallaryStyle}>
                 <section style={{ width: props.largeWidth }}>
                     <div className="mainImageWrapper">
-                        <img src={require('../../blogPostImages/' + props.imagesArray[1])} alt="" />
+                        <img src={require('../../blogPostImages/' + props.imagesArray[3])} alt="" />
                     </div>
                 </section>
                 <section className={"sideImageWrapper"} style={{ width: props.smallWidth }}>
@@ -40,8 +40,10 @@ const Home  = props => {
         height: gallaryHeight+'px',
         overflow: 'hidden'
     }
+
     const sideImageHeight = gallaryHeight / 3
     const imgAr = blogData.data.map(post => post.blogImage)
+
     return (
         <div>
             <Card>
