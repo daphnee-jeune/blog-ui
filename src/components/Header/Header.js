@@ -7,13 +7,12 @@ const Header = () => {
   const [search, setSearch] = useState(false)
 
   const openSearch = () => {
-        setSearch(true)
+        setSearch(!search)
     }
 
-  const submitSearch = (e) => {
+  const submitSearch = e => {
     e.preventDefault()
     alert('Searhed')
-
   }
 
   const searchClass = search ? 'searchInput active' : 'searchInput'
@@ -23,13 +22,12 @@ const Header = () => {
           <ul className="headerMenu">
               <span><NavLink to="/">Home</NavLink></span>
               <span><NavLink to="/about-us">About Us</NavLink></span>
-              <span><NavLink to="/post">Posts</NavLink></span>
               <span><NavLink to="/contact-us">Contact Us</NavLink></span>
           </ul>
 
         <div className="search">
             <form onSubmit={submitSearch}>
-                <input type="text" className={searchClass} placeholder="Search" />
+                <input type="text" className={searchClass} placeholder="" />
                 <img onClick={openSearch} className="searchIcon" src={require('../../icons/search.png')} alt="Search" />
             </form>
             

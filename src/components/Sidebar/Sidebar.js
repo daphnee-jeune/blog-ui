@@ -32,13 +32,20 @@ const Sidebar = (props) => {
                     <img src={profilePic} alt="" />
                 </div>
                 <div className="cardBody">
-                    <p className="personalBio">My name is Daphnee Jeune I am a software developer specialization in Front end developement....:)</p>
+                    <p className="personalBio">My name is Daphnee Jeune I am a software developer specializing in Front-end developement.</p>
                 </div>
             </Card>
 
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
                 <div className="cardHeader">
                     <span>Social Network</span>
+                    <div className="socialLinks">
+                        <i className="fa fa-youtube-square fa-lg"></i>
+                        <i className="fa fa-facebook-square fa-lg"></i>
+                        <i className="fa fa-twitter-square fa-lg"></i>
+                        <i className="fa fa-instagram fa-lg"></i>
+                        <i className="fa fa-linkedin fa-lg"></i>
+                    </div>
                 </div>
             </Card>
 

@@ -9,7 +9,7 @@
     margin: 0 10px;
     text-decoration: none;
     color: #565673;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 1.2px;
 }
 
@@ -25,11 +25,16 @@
 .searchInput {
     border: 0;
     width: 0;
-    transition: width 0.1s ease-in;
+    transition: width 0.4s ease-in;
+    width: 20%;
+    background: transparent;
+    position: relative;
+    top: 20px;
 }
 
 .searchInput.active {
-    width: 150px;
+    width: 350px;
+    border-bottom: 2px solid white;
 }
 
 .searchInput:focus {
@@ -40,4 +45,6 @@
     cursor: pointer;
     width: 20px;
     height: 20px;
+    position: relative;
+    top: 20px;
 }

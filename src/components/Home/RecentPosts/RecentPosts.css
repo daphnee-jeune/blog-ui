@@ -1,10 +1,31 @@
 .postImageWrapper{
-    height: 450px;
+    height: 555px;
     overflow: hidden;
+    padding-bottom: 20px 0;
 }
 
 .postImageWrapper img{
     width: 100%;
     max-height: 100%;
     object-fit: cover;
+}
+
+.recentBlog {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.recentBlog h2 {
+    color: #577d91;
+}
+
+.readMore {
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    background: #d6e5ed;
+    color: #577d91;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
